@@ -1,0 +1,19 @@
+[package]
+name = "game_spoof_rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+egui = "0.28"
+eframe = "0.28"
+reqwest = { version = "0.12", features = ["blocking", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = "0.4"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
