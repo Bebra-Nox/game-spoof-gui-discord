@@ -15,6 +15,9 @@ the game as running. No real game files are downloaded.
 2. `cargo build --release`
 3. Run `target/release/game_spoof_rust.exe`
 
+OR
+Download in release
+
 ## Disclaimer
 This tool may violate Discord's Terms of Service and could put your account
 at risk. Use at your own risk. Not affiliated with or endorsed by Discord.
